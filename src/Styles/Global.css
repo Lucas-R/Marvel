@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-color: #202020;
+    --secund-color: #F0141E;
+    --primary-font : #FAFAFA;
+    --second-font: #5C5C5C;
+}
+
+.container{
+    background: #FAFAFA;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh minmax(80vh, auto) 5vh;
+    grid-gap: 0px 0px;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* HOVERS */
+@keyframes shake {
+    0% {margin-left: 0;}
+    25% {margin-left: 1px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -1px;}
+    100% {margin-left: 0;}
+}

@@ -1,0 +1,87 @@
+.content{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.character-box{
+    width: 100%;
+    min-height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.character-photo{
+    width: 100%;
+    max-height: 250px;
+    background-size: cover;
+}
+
+.character-name{
+    min-height: 100px;
+    color: var(--primary-font);
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.character-button{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    background: var(--secund-color);
+    color: var(--primary-font);
+    border: 1px solid var(--secund-color);
+    border-radius: 5px;
+}
+
+.character-button:hover {
+    animation: shake 0.3s;
+    animation-iteration-count: 1;
+}
+
+.pagination-box{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.button-pagination{
+    width: 40px;
+    height: 50px;
+    background: var(--secund-color);
+    color: var(--primary-font);
+    border: none;
+}
+
+.button-pagination:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.button-pagination:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.button-pagination:hover{
+    background: var(--secund-color);
+    cursor: pointer;
+}
